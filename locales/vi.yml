@@ -60,6 +60,7 @@ search:
 tools:
   categories:
     favorite-tools: 'Công cụ yêu thích của bạn'
+    'my tools': 'My Tools'
     crypto: Mã hóa
     converter: Chuyển đổi
     web: Web
@@ -245,6 +246,10 @@ tools:
   qrcode-generator:
     title: Tạo mã QR
     description: Tạo và tải xuống mã QR cho một URL hoặc chỉ một đoạn văn bản và tùy chỉnh màu nền và màu chữ.
+
+  code-to-image:
+    title: Code to image
+    description: Render code with editor-style syntax highlighting and export it as a PNG or copy it as an image.
 
   wifi-qrcode-generator:
     title: Tạo mã QR WiFi

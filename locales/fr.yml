@@ -54,6 +54,7 @@ search:
 tools:
   categories:
     favorite-tools: 'Vos outils favoris'
+    'my tools': 'My Tools'
     crypto: Cryptographie
     converter: Convertisseur
     web: Web
@@ -64,6 +65,10 @@ tools:
     measurement: Mesure
     text: Texte
     data: Données
+
+  code-to-image:
+    title: Code to image
+    description: Render code with editor-style syntax highlighting and export it as a PNG or copy it as an image.
 
   token-generator:
     title: Générateur de token

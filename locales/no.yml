@@ -60,6 +60,7 @@ search:
 tools:
   categories:
     favorite-tools: 'Dine favoritt verktøy'
+    'my tools': 'My Tools'
     crypto: Krypto
     converter: Konvertering
     web: Web
@@ -252,6 +253,10 @@ tools:
   qrcode-generator:
     title: QR Kode generator
     description: Generer og last ned en QR kode til en URL (eller ren tekst), og tilpass bakgrunns og forgrunns farger.
+
+  code-to-image:
+    title: Code to image
+    description: Render code with editor-style syntax highlighting and export it as a PNG or copy it as an image.
 
   wifi-qrcode-generator:
     title: WiFi QR Kode generator

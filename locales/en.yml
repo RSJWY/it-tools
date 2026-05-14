@@ -60,6 +60,7 @@ search:
 tools:
   categories:
     favorite-tools: 'Your favorite tools'
+    'my tools': 'My Tools'
     crypto: Crypto
     converter: Converter
     web: Web
@@ -252,6 +253,10 @@ tools:
   qrcode-generator:
     title: QR Code generator
     description: Generate and download a QR code for a URL (or just plain text), and customize the background and foreground colors.
+
+  code-to-image:
+    title: Code to image
+    description: Render code with editor-style syntax highlighting and export it as a PNG or copy it as an image.
 
   wifi-qrcode-generator:
     title: WiFi QR Code generator

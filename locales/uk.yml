@@ -60,6 +60,7 @@ search:
 tools:
   categories:
     favorite-tools: 'Ваші улюблені інструменти'
+    'my tools': 'My Tools'
     crypto: Крипта
     converter: Конвертер
     web: Веб
@@ -70,3 +71,7 @@ tools:
     measurement: Вимірювання
     text: Текст
     data: Дані
+
+  code-to-image:
+    title: Code to image
+    description: Render code with editor-style syntax highlighting and export it as a PNG or copy it as an image.
