@@ -73,3 +73,36 @@ Added a new top-level My Tools group with a frontend code-to-image utility, refi
 ### Next Steps
 
 - None - task complete
+
+
+## Session 3: Bootstrap frontend Trellis guidelines
+
+**Date**: 2026-05-14
+**Task**: Bootstrap frontend Trellis guidelines
+**Branch**: `main`
+
+### Summary
+
+Filled the frontend Trellis spec set with repo-specific conventions, examples, and current quality/testing expectations based on the actual Vue 3 codebase.
+
+### Main Changes
+
+(Add details)
+
+### Git Commits
+
+| Hash | Message |
+|------|---------|
+| `7a5a0b4` | (see git log) |
+
+### Testing
+
+- [OK] (Add test results)
+
+### Status
+
+[OK] **Completed**
+
+### Next Steps
+
+- None - task complete
