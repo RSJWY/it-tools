@@ -5,6 +5,10 @@ on:
     tags:
       - 'v*.*.*'
 
+permissions:
+  contents: write
+  packages: write
+
 jobs:
   docker-release:
     runs-on: ubuntu-latest
@@ -15,18 +19,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@3df4ab11eba7bda6032a0b82a6bb43b11571feac # v4
 
+      - name: Compute container image name
+        run: echo "IMAGE_NAME=ghcr.io/${GITHUB_REPOSITORY@L}" >> "$GITHUB_ENV"
+
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v3
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Login to Docker Hub
-        uses: docker/login-action@v3
-        with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
@@ -42,10 +43,8 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            corentinth/it-tools:latest
-            corentinth/it-tools:${{ env.RELEASE_VERSION }}
-            ghcr.io/corentinth/it-tools:latest
-            ghcr.io/corentinth/it-tools:${{ env.RELEASE_VERSION}}
+            ${{ env.IMAGE_NAME }}:latest
+            ${{ env.IMAGE_NAME }}:${{ env.RELEASE_VERSION }}
 
   github-release:
     runs-on: ubuntu-latest
@@ -56,6 +55,9 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@3df4ab11eba7bda6032a0b82a6bb43b11571feac # v4
+
+      - name: Compute container image name
+        run: echo "IMAGE_NAME=ghcr.io/${GITHUB_REPOSITORY@L}" >> "$GITHUB_ENV"
 
       - run: corepack enable
 
@@ -92,12 +94,9 @@ jobs:
           body: |
             ## Docker images
 
-            - Docker Hub
-              - `corentinth/it-tools:latest`
-              - `corentinth/it-tools:${{ env.RELEASE_VERSION }}`
             - GitHub Container Registry
-              - `ghcr.io/corentinth/it-tools:latest`
-              - `ghcr.io/corentinth/it-tools:${{ env.RELEASE_VERSION}}`
+              - `${{ env.IMAGE_NAME }}:latest`
+              - `${{ env.IMAGE_NAME }}:${{ env.RELEASE_VERSION }}`
 
             ## Changelog
 

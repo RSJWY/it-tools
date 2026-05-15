@@ -18,17 +18,41 @@ You have an idea of a tool? Submit a [feature request](https://github.com/Corent
 
 Self host solutions for your homelab
 
-**From docker hub:**
-
-```sh
-docker run -d --name it-tools --restart unless-stopped -p 8080:80 corentinth/it-tools:latest
-```
-
 **From github packages:**
 
 ```sh
-docker run -d --name it-tools --restart unless-stopped -p 8080:80 ghcr.io/corentinth/it-tools:latest
+docker run -d --name it-tools --restart unless-stopped -p 8080:80 ghcr.io/rsjwy/it-tools:latest
 ```
+
+## GitHub Actions Docker releases
+
+This fork publishes Docker images to GitHub Container Registry only.
+
+- Release trigger: push a tag matching `v*.*.*` (for example `v1.2.3`)
+- Published images:
+  - `ghcr.io/rsjwy/it-tools:latest`
+  - `ghcr.io/rsjwy/it-tools:<version>`
+- Nightly Docker publishing is disabled in this fork
+
+### Required GitHub configuration
+
+No extra registry secrets are required for the default GHCR flow.
+
+- Keep GitHub Actions enabled for the repository
+- Allow the workflow `GITHUB_TOKEN` to write packages and create releases
+- Ensure the package visibility/access in GHCR matches how you plan to distribute the image
+
+### Release steps
+
+```sh
+git tag v1.2.3
+git push origin v1.2.3
+```
+
+After the workflow completes, check:
+
+- the GitHub Release draft for the tagged version
+- the published GHCR package at `ghcr.io/rsjwy/it-tools`
 
 **Other solutions:**
 
