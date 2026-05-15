@@ -106,3 +106,36 @@ Filled the frontend Trellis spec set with repo-specific conventions, examples, a
 ### Next Steps
 
 - None - task complete
+
+
+## Session 4: Customize branding and compliance links
+
+**Date**: 2026-05-15
+**Task**: Customize branding and compliance links
+**Branch**: `main`
+
+### Summary
+
+Removed sponsorship and Twitter/X entry points, updated fork repository links, fixed About issue links to the repository issues homepage, and recorded the Trellis task context.
+
+### Main Changes
+
+(Add details)
+
+### Git Commits
+
+| Hash | Message |
+|------|---------|
+| `672826d` | (see git log) |
+
+### Testing
+
+- [OK] (Add test results)
+
+### Status
+
+[OK] **Completed**
+
+### Next Steps
+
+- None - task complete
