@@ -1,0 +1,4 @@
+{"file": ".trellis/spec/frontend/index.md", "reason": "Frontend verification should follow repo-specific Vue and tooling expectations."}
+{"file": ".trellis/spec/frontend/component-guidelines.md", "reason": "Review changed SFC structure, i18n usage, and accessibility conventions."}
+{"file": ".trellis/spec/frontend/quality-guidelines.md", "reason": "Check lint/typecheck expectations and assess whether extra tests are warranted."}
+{"file": ".trellis/spec/guides/index.md", "reason": "Keep cross-file value updates consistent during verification."}

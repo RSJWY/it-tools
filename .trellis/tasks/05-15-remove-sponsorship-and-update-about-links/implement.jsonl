@@ -1,0 +1,5 @@
+{"file": ".trellis/spec/frontend/index.md", "reason": "Frontend stack and required pre-development checklist for touched Vue layout/page/component files."}
+{"file": ".trellis/spec/frontend/directory-structure.md", "reason": "Confirms the expected layers for pages, layouts, and shared components being edited."}
+{"file": ".trellis/spec/frontend/component-guidelines.md", "reason": "Covers Vue SFC composition, i18n usage, and accessibility patterns for UI edits."}
+{"file": ".trellis/spec/frontend/quality-guidelines.md", "reason": "Defines lint/typecheck expectations and review checklist for frontend changes."}
+{"file": ".trellis/spec/guides/index.md", "reason": "Shared pre-modification guidance to search for all affected values before changing links and copy."}
