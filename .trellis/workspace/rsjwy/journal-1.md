@@ -139,3 +139,36 @@ Removed sponsorship and Twitter/X entry points, updated fork repository links, f
 ### Next Steps
 
 - None - task complete
+
+
+## Session 5: Adapt Docker release workflow for fork
+
+**Date**: 2026-05-15
+**Task**: Adapt Docker release workflow for fork
+**Branch**: `main`
+
+### Summary
+
+Adapted GitHub Actions Docker release automation for the fork to publish GHCR-only tag releases, removed nightly Docker publishing, and documented the required GitHub configuration and release steps.
+
+### Main Changes
+
+(Add details)
+
+### Git Commits
+
+| Hash | Message |
+|------|---------|
+| `7aa5692` | (see git log) |
+
+### Testing
+
+- [OK] (Add test results)
+
+### Status
+
+[OK] **Completed**
+
+### Next Steps
+
+- None - task complete
